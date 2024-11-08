@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(./assets/sunset-fog-lake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url('./assets/panoramic-photo-brown-road-beside-green-grass-fields.jpg'); /* Use a different image for small screens */
+    }
+}
+
+#app {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #6c54d4;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 2px #3932ad;
+}
+
+#city-input {
+    padding: 8px;
+    width: calc(100% - 20px);
+    border: 2px solid #6c54d4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#city-input input:focus  {
+    border-color: #463789;
+}
+
+#city-input::placeholder {
+    color: #888;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+#search-button {
+    background-color: #6c54d4;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #463789;
+    transform: scale(1.05);
+}
+
+#weather-display {
+    margin-top: 20px;
+    padding: 15px;
+    /* background-color: #f1f8e9; */
+    border-radius: 8px;
+}
+
+#weather-display h2 {
+    color: #6c54d4;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#weather-display p {
+    color: #37474f;
+    font-size: 25px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+#weather-display img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+#error-window {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #f44336; 
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+    display: none; 
+}
+
+#error-window.show {
+    display: block; 
+}
+
+.hidden {
+    display: none;
+}

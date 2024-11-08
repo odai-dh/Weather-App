@@ -1,2 +1,14 @@
-# Weather-App
-An weather app that's user-friendly who allows users to check the current weather by city name. It features a toggle button to switch between Celsius and Fahrenheit, displays weather conditions with icons, and provides details like temperature, humidity, and wind speed. Simple and responsive, it offers an easy way to get real-time weather updates!
+# Weather App
+
+A simple, user-friendly weather app that provides real-time weather information for any city. Users can toggle between Celsius and Fahrenheit and view key weather details, including temperature, humidity, and wind speed, along with an icon representing current weather conditions.
+
+## Features
+
+- **City Search**: Enter a city name to get current weather information.
+- **Toggle Units**: Switch between Celsius (°C) and Fahrenheit (°F).
+- **Weather Icons**: Displays icons to represent weather conditions (sunny, rainy, cloudy, etc.).
+- **Weather Details**: Shows temperature, humidity, wind speed, and weather description.
+
+API
+
+This app uses the OpenWeatherMap API to fetch real-time weather data. You’ll need to sign up for an API key and replace your_api_key in api.js.
