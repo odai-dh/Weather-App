@@ -12,7 +12,7 @@ body {
 }
 @media (max-width: 768px) {
     body {
-        background-image: url('./assets/panoramic-photo-brown-road-beside-green-grass-fields.jpg'); /* Use a different image for small screens */
+        background-image: url('./assets/panoramic-photo-brown-road-beside-green-grass-fields.jpg');
     }
 }
 
