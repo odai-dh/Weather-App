@@ -11,12 +11,12 @@ module.exports = {
         clean: true,
     },
     devServer: {
-        static: './dist',   // Serve content from the `dist` directory
+        static: './dist',
         open: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',  // Reference the main HTML file in the root directory
+            template: './index.html', 
         }),
     ],
     module: {

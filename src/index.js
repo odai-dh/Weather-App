@@ -2,13 +2,13 @@ import { fetchWeather } from './api';
 import { displayWeather } from './ui';
 import './style.css';
 
-const errorWindow = document.getElementById('error-window'); // Select the error window
+const errorWindow = document.getElementById('error-window'); 
 
 function showError(message) {
-    errorWindow.textContent = message; // Set the error message
-    errorWindow.classList.add('show'); // Show the error window
+    errorWindow.textContent = message;
+    errorWindow.classList.add('show'); 
     setTimeout(() => {
-        errorWindow.classList.remove('show'); // Hide after 3 seconds
+        errorWindow.classList.remove('show'); 
     }, 3000);
 }
 

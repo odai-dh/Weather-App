@@ -1,13 +1,13 @@
-const API_KEY = '7478db3c82c0337b8b5db0bc36c18b7c'; // Replace with your actual API key
+const API_KEY = '7478db3c82c0337b8b5db0bc36c18b7c'; 
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export async function fetchWeather(city) {
-    const API_KEY = '7478db3c82c0337b8b5db0bc36c18b7c'; // Make sure this is the exact working key
+    const API_KEY = '7478db3c82c0337b8b5db0bc36c18b7c'; 
     const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
     
     try {
         const url = `${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`;
-        console.log('API Request URL:', url); // Log the URL to verify the request structure
+        console.log('API Request URL:', url); 
         
         const response = await fetch(url);
         
